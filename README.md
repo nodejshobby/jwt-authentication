@@ -7,6 +7,6 @@ You can use the normal local redis connection as localhost:6379
 `npm run dev`
 ## Check what my api is all about here
 **Documentation**: https://documenter.getpostman.com/view/17868433/UV5UiJMm
-## My API BASE URL here
-**API BASE URL**: https://jsonwebtoken-api.herokuapp.com/api/v1/auth
+## API BASE URL
+https://jsonwebtoken-api.herokuapp.com/api/v1/auth
 
