@@ -135,6 +135,7 @@ exports.forgotPassword=async (req,res,next)=>{
     }
     try{
         user=await User.findOne({ email });
+        if(!user) return res.status(400).json({ message: "Something went wrong"})
         userId=user._id;
         reset_token=await jwt.sign({ _id: userId },process.env.RESET_SECRET_TOKEN,{ expiresIn: "1h"});
         const reset_link=`${process.env.CLIENT_URL}/auth/reset/${reset_token}`;
